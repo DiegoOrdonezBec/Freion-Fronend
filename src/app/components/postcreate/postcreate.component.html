@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="createPostForm" (ngSubmit)="createPost()">
+            <div class="form-group">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-10">
+                        <mat-form-field>
+                            <textarea matInput placeholder="Give us your opinion!" name="content"
+                                [formControlName]="'content'" required></textarea>
+                            <mat-error *ngIf="!createPostForm.get('content').valid">Invalid content</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-10">
+                        <mat-form-field>
+                            <mat-label>Privacy</mat-label>
+                            <mat-select name="privacy" [formControlName]="'privacy'" required>
+                                <mat-option [value]="'PUBLIC'">Public</mat-option>
+                                <mat-option [value]="'ONLY_FOLLOWERS'">Only followers</mat-option>
+                                <mat-option [value]="'PRIVATE'">Private</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-10">
+                        <button mat-raised-button color="accent" class="post-button" type="submit"
+                            [disabled]="isLoading">Post</button>
+                        <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
