@@ -2,7 +2,7 @@
   <div class="col-8 col-md-6 col-lg-5 col-xl-4">
     <mat-card>
       <mat-card-title>WELCOME</mat-card-title>
-      <mat-tab-group mat-stretch-tabs color="accent">
+      <mat-tab-group mat-stretch-tabs color="primary">
         <mat-tab routerLink="/login" label="Login">
           <mat-card-content>
             <form [formGroup]="loginForm" (ngSubmit)="login()">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="row no-gutters justify-content-center">
                   <div class="col-10">
-                    <button mat-raised-button color="accent" class="login-button" type="submit" [disabled]="isLoading">Login</button>
+                    <button mat-raised-button color="primary" class="login-button" type="submit" [disabled]="isLoading">Login</button>
                     <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
                   </div>
                 </div>
@@ -38,7 +38,7 @@
             </form>
           </mat-card-content>
         </mat-tab>
-        <mat-tab routerLink="/signup" label="Sign Up">
+        <mat-tab routerLink="/signup" label="Signup">
           <mat-card-content>
             <form [formGroup]="signupForm" (ngSubmit)="signup()">
               <div class="form-group">
@@ -86,7 +86,7 @@
                 </div>
                 <div class="row no-gutters justify-content-center">
                   <div class="col-10">
-                    <button mat-raised-button color="accent" class="login-button" type="submit" [disabled]="isLoading"> Sign Up </button>
+                    <button mat-raised-button color="primary" class="login-button" type="submit" [disabled]="isLoading"> Sign Up </button>
                     <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
                   </div>
                 </div>

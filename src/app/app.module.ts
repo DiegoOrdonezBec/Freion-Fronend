@@ -85,6 +85,7 @@ import { InterceptorService } from './interceptor.service';
     MatButtonToggleModule,
     MatSelectModule,
     MatBadgeModule,
+    MatExpansionModule,
     ToastrModule.forRoot()
   ],
   providers: [{

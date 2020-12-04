@@ -15,6 +15,7 @@ export class PostboardComponent implements OnInit {
   isPosting: Boolean;
   allPosts: Array<PostResponse>;  
   allFollowPosts: Array<PostResponse>;  
+  panelOpenState: Boolean;
 
   constructor(
     private postService: PostService,

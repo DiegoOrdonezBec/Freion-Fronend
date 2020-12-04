@@ -1,0 +1,7 @@
+.main {
+    min-height: 100%;
+    max-height: max-content;
+    background: #ECEFF1 ; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#ECEFF1 , #FAFAFA); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,#ECEFF1 , #FAFAFA);
+}

@@ -1,7 +1,18 @@
-mat-toolbar {
-    margin-top: 10px;
+mat-expansion-panel {
+    margin-bottom: 20px;
 }
 
-.spacer {
-    flex: 1 1 auto;
+mat-card {
+    margin: 10px 0;
+}
+.postboard {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.postboard-options {
+    color: white;
+    background: #1e3c72;
+    background: -webkit-linear-gradient(to bottom, #1e3c72, #2a5298);
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
 }
